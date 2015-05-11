@@ -1,5 +1,5 @@
 /*
-Theme Name: Mundial Futebol de Rua Theme
+Theme Name: Copa Am√©rica de Futebol de Rua Theme
 Theme URI: http://underscores.me/
 Author: Brasa
 Author URI: http://brasa.art.br/
@@ -115,13 +115,13 @@ a img {
 ----------------------------------------------- */
 body {
 	color: #404040;
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	background-color: #FFFFFF;
 	line-height: 1.8;
 	margin: 0;
 	padding: 0;
-	background: url("images/bg-site-bege.jpg") repeat scroll center top rgba(0, 0, 0, 0);
+	background: url("images/bg.jpg") repeat scroll center top #F8EE7C;
 }
 .fonte-roxa {
 	color: #C63F28;	
@@ -336,7 +336,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: 'Tauri', Arial,sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
 	line-height: 1.2;
 }
@@ -345,6 +345,26 @@ textarea {
 	width: 100%;
 	height: 1px;
 }
+.destaque {
+	background: url('images/mini-escudo.png') left center no-repeat transparent;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0 50px 80px;
+	width: auto;
+}
+.titulo-header {
+	color: #262f21;
+	float: left;
+	font-size: 1.5em;
+	font-weight: bolder;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: 100%;
+}
+
 /* Headings */
 h1,h2,h3,h4,h5,h6 {
 	clear: both;
@@ -749,7 +769,6 @@ a:active {
 /* =Header
 ----------------------------------------------- */
 #masthead {
-    background: none repeat scroll 0 0 #2F2C2E;
     min-height: 110px;
     margin: 0 auto;
     max-width: 1000px;
@@ -757,9 +776,6 @@ a:active {
     position: fixed;
     width: 100%;
     z-index:1010;
-	-webkit-box-shadow: 0 2px 6px 0 rgba(48,48,48,0.4);
-	-moz-box-shadow: 0 2px 6px 0 rgba(48,48,48,0.4);
-	box-shadow: 0 2px 6px 0 rgba(48,48,48,0.4);
 }
 #masthead-interno {
 	height: 60px;
@@ -771,20 +787,32 @@ a:active {
 
 .altura-header {
 	width: 100%;
-	height: 110px;
+	height: 175px;
 }
 
 /* Area 1 Header */
-
+.bg-header {
+	background: url('images/bg-menu.jpg') bottom center repeat-x #262f21;
+	display: block;
+	min-height: 207px;
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 4;
+	-webkit-box-shadow: 0 2px 6px 0 rgba(48,48,48,0.4);
+	-moz-box-shadow: 0 2px 6px 0 rgba(48,48,48,0.4);
+	box-shadow: 0 2px 6px 0 rgba(48,48,48,0.4);
+}
 .a-logo {
-	height: 90px;
+	height: 180px;
     position: absolute;
-    width: 180px;
+    width: 200px;
 }
 #logo {
-	width: 173px;
-	height: 90px;
-	background: url(images/logo-topo-menu-escuro.png) 1px 0px no-repeat;
+	width: 180px;
+	height: 200px;
+	background: url(images/logo-copa-america-de-futebol-de-rua.png) 1px 0px no-repeat;
 	float: left;
 	margin: 10px 0 10px 35px;
 }
@@ -794,11 +822,25 @@ a:active {
 .a-logo {
 	position: absolute;
 }
+.title-site {
+	clear: none;
+	color: #fbeb34;
+	float: left;
+	font-size: 3em;
+	font-weight: bolder;
+	line-height: 1;
+	text-align: left;
+	text-transform: uppercase;
+	max-width: 70%;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+}
+body.home .title-site {
+	margin: 30px 0 0 30px;
+}
 
 /* =Menu
 
 ----------------------------------------------- */
-
 #search-interno {
     float: right;
     margin: 13px 15px 0 0;
@@ -808,9 +850,10 @@ a:active {
 	display: block;
 	float: left;
 	width: auto;
-	font-family: 'Pathway Gothic One', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1em;
-	margin: 40px 5px 0 10px;
+	font-weight: 400;
+	margin: 28px 5px 0 17px;
 	letter-spacing: -1px;
 }
 .navigation-main-interno {
@@ -822,7 +865,7 @@ a:active {
 }
 .navigation-main ul, .navigation-main-interno ul {
 	list-style: none outside none;
-	color: #C63F28;
+	color: #c0c0c0;
 	margin: 0;
 	padding-left: 0;
 	text-transform: uppercase;
@@ -835,10 +878,10 @@ a:active {
 .navigation-main a, .navigation-main-interno a {
     display: block;
     margin: 0 10px 0 0;
-	font-size: 1.3em;
+	font-size: 1.1em;
     text-decoration: none;
-	font-weight: bold;
-	color: #FFFFFF;
+	color: #c0c0c0;
+	transition: color 0.5s ease;
 }
 
 .navigation-main ul ul, .navigation-main-interno ul ul {
@@ -862,7 +905,7 @@ a:active {
 .navigation-main ul ul li, .navigation-main-interno ul ul li {
 }
 .navigation-main li:hover > a, .navigation-main-interno li:hover > a {
-	color: #D06433;
+	color: #fbeb34;
 }
 .navigation-main ul ul :hover > a, .navigation-main-interno ul ul :hover >a {
 }
@@ -902,7 +945,7 @@ nav select {
 #site-description {
     color: #FFFFFF;
     float: right;
-    font-family: 'Pathway Gothic One',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.6em;
     line-height: 1.4em;
     margin: 20px 10px 10px 0;
@@ -1037,7 +1080,7 @@ nav select {
 }
 .title-home h1 {
 	color: #FFF;
-	font-family: 'Tauri', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: lowercase;
     font-size: 6em;
     font-weight: lighter;
@@ -1046,7 +1089,7 @@ nav select {
 
 .slide-content {
 	color: #FFF;
-	font-family: 'Tauri', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: lowercase;
     font-size: 6em;
     font-weight: lighter;
@@ -1063,7 +1106,7 @@ nav select {
 	display: none;
 }
 
-/* =NotÌcias
+/* =Not√≠cias
 ----------------------------------------------- */
 
 .white-popup {
@@ -1141,7 +1184,7 @@ nav select {
 }
 .titulo-page h2 {
     color: #C63F28;
-    font-family: 'Tauri',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.2em;
     font-weight: 200;
     margin: 18px 0 0 20px;
@@ -1156,7 +1199,7 @@ nav select {
 	margin: 18px 0 0 0;
 	color: #CA6233;
     text-transform: uppercase;
-    font-family: 'Tauri',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
 	font-size: 9em;
 }
@@ -1169,12 +1212,12 @@ nav select {
 	margin: 30px 0 0 30px;
 	color: #4d449b;
     text-transform: uppercase;
-    font-family: 'Tauri',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 200;
 }
 
 .entry-meta {	
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	font-size: 1em;
 	color: #888;
@@ -1185,7 +1228,7 @@ nav select {
 }
 
 .titulo-noticias {
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 	color: #C53824;
 	line-height: 1.4;
@@ -1210,10 +1253,18 @@ nav select {
 
 /* =Slider Home - Orbit Slider
 ----------------------------------------------- */
+.bg-slider {
+	background: url('images/bg-slider-home.jpg') center top repeat-x transparent;
+	height: 480px;
+	overflow: hidden;
+	width: 100%;
+	position: absolute;
+	top: 207px;
+}
 #slider {
 	max-width: 1000px;
-	margin-top: 110px;
-	font-family: 'Tauri', serif;
+	margin-top: 175px;
+	font-family: 'Source Sans Pro', sans-serif;
 	display:block;	
 	min-height: 450px;
 	max-height: 500px;
@@ -1271,7 +1322,6 @@ div.slider-nav span {
 	margin: 0 auto;
 	max-width: 1000px;
 	padding: 0;
-box-shadow: 0 6px 13px 0 rgba(30, 30, 30, 0.6);
 }
 
 /* =Content
@@ -1641,17 +1691,10 @@ height: 70px;
 	overflow: hidden;
 }
 
-.titulo-header {
-    float: left;
-    margin: 50px auto 0;
-    width: 100%;
-	font-family: 'Tauri', Arial, sans-serif;
-}
-
 .titulo-archive-paises {
     float: left;
     width: auto;
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: #C63F28;
     margin: 20px 0 0 25px;
 }
@@ -1659,7 +1702,7 @@ height: 70px;
 .titulo-index-noticias {
     float: left;
     width: auto;
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	color: #C63F28;
     margin: 20px 0 0 40px;
 }
@@ -1687,7 +1730,7 @@ height: 70px;
     margin: 70px auto 0;
     text-align: center;
     width: 100%;
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	text-transform: none;
 	font-size: 2.2em;
 }
@@ -1720,7 +1763,6 @@ height: 70px;
     padding: 15px;
 }
 
-
 .text-after {
     float: left;
     display: block;
@@ -1728,16 +1770,14 @@ height: 70px;
     overflow: hidden;
     padding: 20px 10px;
 }
-
-
 .titulo-header-metade {
     margin: 20px auto 0;
     width: auto;
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .titulo-header-popup {
-    font-family: 'Tauri',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 20px auto;
     width: auto;
     text-align: center;
@@ -1745,7 +1785,7 @@ height: 70px;
 }
 
 .titulo-header-inteiro {
-    font-family: 'Tauri',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 50px auto 0;
     width: 100%;
 }
@@ -1758,16 +1798,6 @@ height: 70px;
 	height: 56px;
 	background: url("images/artunlimited/img-sprite.png") no-repeat scroll -605px 0 transparent;
 }
-
-.header-sub-content h2{
-	margin-bottom: 20px;
-	font-size: 2.2em;
-	font-weight: 500;
-	letter-spacing: 1px;
-    text-align: center;
-    width: 100%;
-}
-
 
 .contact-submit {
 	margin-bottom: 0 !important;
@@ -1817,7 +1847,7 @@ height: 70px;
     width: 110px;
 }
 
-/* NotÌcias
+/* Not√≠cias
 ----------------------------------------------- */
 
 .todas-noticias {
@@ -1845,7 +1875,7 @@ height: 70px;
     float: left;
     margin: 40px 0 0 0;
     width: auto;
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 .titulo-header-noticias h2{
   	float: left;
@@ -1913,7 +1943,7 @@ text-decoration: none;
 }
 .titulo-cada-noticia {
     float: left;
-    font-family: 'Tauri',Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.3em;
     font-weight: 500;
     line-height: 1.3;
@@ -1965,14 +1995,14 @@ text-decoration: none;
 	margin-top: 2em;
 }
 #sidebar ul h2 {
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 	color: #006bb5;
 	text-transform: uppercase;
 }
 
 .widget-title {
-	font-family: 'Tauri', Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 200;
 	color: #BE3724;
 	text-transform: uppercase;
@@ -2050,7 +2080,7 @@ text-decoration: none;
     display: none;
 }
 
-/* Galeria Carousel do Plugin (Necess·ria)
+/* Galeria Carousel do Plugin (Necess√°ria)
 ----------------------------------------------- */
 .list_carousel {
     overflow: hidden;
@@ -2142,7 +2172,7 @@ text-decoration: none;
     display: none;
 }
 
-/* carousel do projeto em quest„o*/
+/* carousel do projeto em quest√£o*/
 
 ul#carousel li {
 	display: block;
@@ -2291,7 +2321,7 @@ body.single-projects #carousel_wrap { margin: 15px 0 30px }
 }
 .wrapper-barra {
     color: #FFFFFF;
-    font-family: "Basic Commercial Bold",Helvetica,Arial,sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     min-height: 50px;
 	margin: 95px 0 0 10px;
@@ -2520,7 +2550,7 @@ a.titulo-resumo {
 
 .entry-title-interno {
 	color: #C63F28;
-	font-family: 'Tauri', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
     font-size: 2.5em;
     line-height: 1.2;
 }
@@ -3084,7 +3114,7 @@ margin: 0 !important;
 	.navigation-main {
 		display: block;
 		float: left;
-		font-family: 'Pathway Gothic One',Arial,sans-serif;
+		font-family: 'Source Sans Pro', sans-serif;
 		margin: 40px 0 10px 20px;
 		width: auto;
 		font-size: 0.85em;

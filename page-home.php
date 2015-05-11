@@ -1,36 +1,32 @@
-<?php /** 
-* Template Name: Inicial (Home) */
+<?php
+/** 
+* Template Name: Inicial (Home)
+*/
 
-get_header( 'home' ); ?>
+get_header(); ?>
  
 <div id="slider">
-
-	<div id="slider-content-logo">
-		<img src="<?php bloginfo('template_directory'); ?>/images/logo-slider-sombranca.png" width="237" height="400" alt="Logo Slider" />
-	</div>
-
-	<?php echo do_shortcode( '[orbit-slider]' );?>
-
+	<?php echo do_shortcode('[brasa_slider name="Home"]'); ?>
 </div><!-- #slider -->
-	
-<!-- Sobre -->
-    <div class="sub-content" id="nav-quem-somos">
 
-    <?php
-    $oque = "";
-    $oque = get_page_by_path( 'o-que-e');
- ?>
-	<div class="esquerda">
-    
-		<div class="header-sub-content">
-			<div class="titulo-header-metade"><h2><?php echo qtrans_use($q_config['language'], $oque->post_title, true); ?></h2></div>
-		</div>
-        <?php $content_oque = apply_filters('the_content', $oque->post_content); ?>
+	<!-- Sobre -->
+	<?php
+    	$sobre = "";
+    	$sobre = get_page_by_path( 'sobre');
+ 	?>
+	<div class="header-sub-content">
+		<div class="titulo-header"><h2 class='destaque'><?php _e( 'Copa AmÃ©rica de Futebol de Rua', 'copa' ); ?></h2></div>
+	</div>
+	
+    <div class="sub-content" id="nav-sobre">
+
+	    
+        <?php $content_sobre = apply_filters('the_content', $sobre->post_content); ?>
         <div class="content-metade">
-            <?php echo $content_oque; ?>
+            <?php echo $content_sobre; ?>
         </div><!-- .content-metade -->
 
-    </div><!-- .esquerda -->
+    
 
     <?php
     $quem_somos = "";
@@ -39,7 +35,7 @@ get_header( 'home' ); ?>
 	<div class="direita">
     
 		<div class="header-sub-content">
-			<div class="titulo-header-metade"><h2><?php echo qtrans_use($q_config['language'], $quem_somos->post_title, true); ?></h2></div>
+			<div class="titulo-header-metade"><h2></h2></div>
 		</div>
         <?php $content_quem_somos = apply_filters('the_content', $quem_somos->post_content); ?>
         <div class="content-metade">
@@ -118,9 +114,9 @@ get_header( 'home' ); ?>
 		<div class="content-bandeiras">
 
 	<?php
-							/* $paged é a variável para paginação do Loop CPT Projetos */	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+							/* $paged Ã© a variÃ¡vel para paginaÃ§Ã£o do Loop CPT Projetos */	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-							/* $args_loop_cpt_projetos são os argumentos para o Loop */
+							/* $args_loop_cpt_projetos sÃ£o os argumentos para o Loop */
 							$args_loop_cpt_projetos = array(
 							'post_type' => 'paises',
 							'orderby' => 'title',
@@ -155,7 +151,7 @@ get_header( 'home' ); ?>
 	<div class="footer-sub-content">
 	</div>
 </div><!-- .sub-content -->
-<!-- Final Pai­ses Participantes -->
+<!-- Final PaiÂ­ses Participantes -->
     
 <!-- Noticias -->
 
@@ -205,7 +201,7 @@ get_header( 'home' ); ?>
 					
     </div>
 
-<!-- Final NotÃ­cias -->
+<!-- Final NotÃƒÂ­cias -->
 
    	<!-- Contatos -->
 	

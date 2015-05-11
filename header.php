@@ -20,7 +20,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link href='http://fonts.googleapis.com/css?family=Tauri|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9 ]><script src="/lib/respond.min.js"></script><![endif]-->
 <?php wp_head(); ?>
 
@@ -28,13 +28,20 @@
 
 <body <?php body_class(); ?>>
 
+<div class="bg-header"></div>
+<div class="bg-slider"></div>
+
 <div id="page" class="hfeed site site-home">
 
 	<header id="masthead" class="site-header" role="banner">
 		        
         <div id="logo">
         	<a class="a-logo" href="<?php echo esc_url( home_url( '/' ) ); ?><?php _e("[:pt]pt[:es]es"); ?>" rel="home"></a>
-        </div><!-- #logo -->             
+        </div><!-- #logo -->
+
+        <h1 class="title-site">
+        	<?php bloginfo( 'name' ); ?>
+        </h1>  
 		
 	<div class="area-3-header">
 
@@ -43,16 +50,6 @@
 			</nav><!-- #site-navigation -->
 		
     </div><!-- .area-3-header -->
-
-		<div id="linguas">
-			<div id="es">
-            	<a class="a-linguas" href="<?php echo esc_url( home_url( '/es' ) ); ?>"></a>
-			</div><!-- #es -->
-            <div id="pt">
-				<a class="a-linguas" href="<?php echo esc_url( home_url( '/pt' ) ); ?>"></a>	
-		    </div><!-- #pt -->
-        </div><!-- #linguas -->
-
 
 		<div id="site-description">
         	<?php bloginfo( 'description' ); ?>
