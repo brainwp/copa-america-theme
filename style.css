@@ -1105,7 +1105,38 @@ nav select {
 	line-height: 1.2;
 	display: none;
 }
-
+.sub-content.about{
+	background:#fefac5;
+	width:100%;
+}
+.sub-content.about *{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.sub-content.about .all{
+	padding:10px;
+}
+.sub-content.about .content{
+	width:75%;
+	float:left;
+}
+.sub-content.about .links-right{
+	width:25%;
+	float:right;
+	text-align: center;
+}
+.sub-content.about .links-right a{
+	margin-bottom:10px;
+	display: inline-block;
+	width:90%;
+	padding:10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color:white;
+	font-size:1.7em;
+	background:#262f21;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius:3px;
+}
 /* =Notícias
 ----------------------------------------------- */
 

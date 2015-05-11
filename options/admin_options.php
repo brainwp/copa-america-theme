@@ -82,6 +82,47 @@ array( "name" => "Telefone",
 	"type" => "text",
 	"std" => ""),
 	
+array( "type" => "close"),
+ 
+array( "name" => "Home",
+	"type" => "section"),
+array( "type" => "open"),
+ 
+array( "name" => 'Link do primeiro link rápido da home',
+	"desc" => '',
+	"id" => $shortname."_link_url_1",
+	"type" => "text",
+	"std" => ""),
+
+array( "name" => 'Titulo do primeiro link rápido da home',
+	"desc" => '',
+	"id" => $shortname."_link_title_1",
+	"type" => "textarea",
+	"std" => ""),
+
+array( "name" => 'Link do segundo link rápido da home',
+	"desc" => '',
+	"id" => $shortname."_link_url_2",
+	"type" => "text",
+	"std" => ""),
+
+array( "name" => 'Titulo do segundo link rápido da home',
+	"desc" => '',
+	"id" => $shortname."_link_title_2",
+	"type" => "textarea",
+	"std" => ""),
+
+array( "name" => 'Link do terceiro link rápido da home',
+	"desc" => '',
+	"id" => $shortname."_link_url_3",
+	"type" => "text",
+	"std" => ""),
+
+array( "name" => 'Titulo do terceiro link rápido da home',
+	"desc" => '',
+	"id" => $shortname."_link_title_3",
+	"type" => "textarea",
+	"std" => ""),
 array( "type" => "close")
  
 );
