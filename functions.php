@@ -127,6 +127,9 @@ add_action( 'widgets_init', 'mundialfutebolderua_widgets_init' );
  * Enqueue scripts and styles
  */
 function mundialfutebolderua_scripts() {
+	//load source sans pro
+	wp_enqueue_style( 'brasa-source-sans-pro','http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,900,700,700italic,600italic,600,400italic,200,200italic,300italic,300' );
+
 	wp_enqueue_style( 'mundialfutebolderua-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'twentyeleven-style', get_template_directory_uri() . '/twentyeleven-style.css' );
 	wp_enqueue_style( 'jquery.jscrollpane', get_template_directory_uri() . '/js/scroll/script/jquery.jscrollpane.css' );
@@ -261,4 +264,4 @@ function limit_words($string, $word_limit) {
 //add_action ('all', create_function ('', 'var_dump (current_filter ());')); 
 
 //Adiciona as Minhas Opções
-require_once (get_stylesheet_directory() . '/options/admin_options.php');
+//require_once (get_stylesheet_directory() . '/options/admin_options.php');

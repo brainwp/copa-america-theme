@@ -28,9 +28,9 @@ get_header(); ?>
             <div class="links-right">
             	<div class="all">
             		<?php for($i = 1; $i <= 3; $i++): ?>
-            	        <?php if($link = get_option('mo_link_url_'.$i)):?>
+            	        <?php if($link = kirki_get_option('home_link_'.$i)):?>
             	            <a href="<?php echo esc_url($link);?>">
-            	        	    <?php $title = get_option('mo_link_title_'.$i);?>
+            	        	    <?php $title = kirki_get_option('home_link_title_'.$i);?>
             	        	    <?php echo apply_filters('the_title',$title);?>
             	            </a>
             	        <?php endif;?>
