@@ -22,8 +22,7 @@ get_header(); ?>
     	<div class="all">
     		<?php if(!empty($sobre)):?>
     		<div class="content">
-    			<?php $content = qtranxf_use($q_config['language'], $sobre->post_content, true); ?>
-    			<?php echo apply_filters( 'the_content', $content );?>
+    			<?php echo apply_filters( 'the_content', $sobre->post_content );?>
     	    </div><!-- .content -->
             <?php endif;?>
             <div class="links-right">
@@ -32,7 +31,7 @@ get_header(); ?>
             	        <?php if($link = get_option('mo_link_url_'.$i)):?>
             	            <a href="<?php echo esc_url($link);?>">
             	        	    <?php $title = get_option('mo_link_title_'.$i);?>
-            	        	    <?php echo qtranxf_use($q_config['language'], $title, true);?>
+            	        	    <?php echo apply_filters('the_title',$title);?>
             	            </a>
             	        <?php endif;?>
                     <?php endfor;?>				
@@ -40,4 +39,28 @@ get_header(); ?>
             </div><!-- .links-right -->
     	</div><!-- .all -->
     </div>
+
+    <section id="noticias-home">
+    	<h2 class="section-title">
+    		<?php _e('Notícias','copa');?>
+    	</h2><!-- .section-title -->
+    	<div class="clear"></div><!-- .clear -->
+			<?php
+			// WP_Query arguments
+			$args = array (
+			'post_type' => array('post'),
+			'page'      => 1,
+			'posts_per_page' => get_option('posts_per_page')
+			);
+  			// The Query
+			$query = new WP_Query( $args );
+			?>
+			<?php if ( $query->have_posts() ) : ?>
+				<?php while ( $query->have_posts() ): $query->the_post(); ?>
+				    <?php get_template_part('content','noticias');?>
+				<?php endwhile; ?>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
+    </section><!-- #noticias-home -->
+    <div class="clear"></div><!-- .clear -->
 <?php get_footer(); ?>
