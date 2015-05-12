@@ -1230,11 +1230,16 @@ section .section-title{
 	background:#262f21;
 	margin-top:157px;
 	margin-left:28%;
+	transition:200ms ease all;
 }
 .noticias-container .permalink span{
 	position: absolute;
 	margin-top: -39px;
 	margin-left: -13px;
+}
+.noticias-container .permalink:hover{
+	background:#666;
+	transition:200ms ease all;
 }
 .white-popup {
 	background: none repeat scroll 0 0 #E5833D;
