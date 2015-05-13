@@ -104,6 +104,11 @@ function brasa_kirki_add_panel( $wp_customize ) {
         'priority'    => 10,
         'panel'       => 'home',
     ) );
+    $wp_customize->add_section( 'home_contato', array(
+        'title'       => __( 'Seção Entre em Contato', 'copa' ),
+        'priority'    => 10,
+        'panel'       => 'home',
+    ) );
 
 }
 add_action( 'customize_register', 'brasa_kirki_add_panel' );
@@ -204,6 +209,65 @@ function brasa_kirki_fields( $fields ) {
         'section'  => 'home_links',
         'priority' => 1,
     );
+
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_title_1',
+        'label'    => __( 'Título do primeiro link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 1,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_txt_1',
+        'label'    => __( 'Texto do primeiro link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 2,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_link_title_1',
+        'label'    => __( 'Título no botão do primeiro link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 3,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_link_1',
+        'label'    => __( 'URL do primeiro link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 4,
+    );
+
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_title_2',
+        'label'    => __( 'Título do segundo link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 5,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_txt_2',
+        'label'    => __( 'Texto do segundo link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 6,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_link_title_2',
+        'label'    => __( 'Título no botão do segundo link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 7,
+    );
+    $fields[] = array(
+        'type'     => 'textarea',
+        'setting'  => 'home_contato_link_2',
+        'label'    => __( 'URL do segundo link', 'copa' ),
+        'section'  => 'home_contato',
+        'priority' => 8,
+    );
+
     return $fields;
 }
 add_filter( 'kirki/fields', 'brasa_kirki_fields' );
