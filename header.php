@@ -27,33 +27,43 @@
 
 <body <?php body_class(); ?>>
 
-<div class="bg-header"></div>
-<div class="bg-slider"></div>
+<?php $class = '';?>
+<?php if(!is_page('home') && is_page()): ?>
+	<?php $class = 'is-mini-header';?>
+<?php endif;?>
+
+<div class="bg-header <?php echo $class;?>"></div>
+<div class="bg-slider <?php echo $class;?>"></div>
 
 <div id="page" class="hfeed site site-home">
 
 	<header id="masthead" class="site-header" role="banner">
-		        
+	<?php if(is_page('home')):?>	        
         <div id="logo">
         	<a class="a-logo" href="<?php echo esc_url( home_url( '/' ) ); ?><?php _e("[:pt]pt[:es]es"); ?>" rel="home"></a>
         </div><!-- #logo -->
+	<?php endif;?>
 
-        <h1 class="title-site">
-        	<?php bloginfo( 'name' ); ?>
-        </h1>  
-		
-	<div class="area-3-header">
+	<?php $class = '';?>
+	<?php if(!is_page('home') && is_page()): ?>
+	    <a id="logo-mini" <?php echo esc_url( home_url( '/' ) ); ?>></a><!-- #logo-mini -->
+    <?php endif;?>
+
+    <?php $class = '';?>
+    <?php if(!is_page('home') && is_page()): ?>
+        <?php $class = 'is-mini-header';?>
+    <?php endif;?>
+
+    <h1 class="title-site <?php echo $class;?>">
+        <?php bloginfo( 'name' ); ?>
+    </h1> 
+	<div class="area-3-header <?php echo $class;?>">
 
 			<nav id="site-navigation" class="navigation-main" role="navigation">
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'items_wrap' => '<ul class="menu"><li class="first-menu-item"></li>%3$s</ul>' ) ); ?>		
 			</nav><!-- #site-navigation -->
 		
-    </div><!-- .area-3-header -->
-
-		<div id="site-description">
-        	<?php bloginfo( 'description' ); ?>
-        </div><!-- #site-description -->
-			
+    </div><!-- .area-3-header -->			
         
 	</header><!-- #masthead -->
 

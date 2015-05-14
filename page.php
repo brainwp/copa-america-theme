@@ -12,7 +12,7 @@
 
 get_header( 'interno' ); ?>
 
-<div class="altura-header"></div>
+<div class="altura-header is-mini-header"></div>
 	<div id="content-pages">
 		<div id="content" class="page-content" role="main">
 
@@ -24,5 +24,7 @@ get_header( 'interno' ); ?>
 
 		</div><!-- #content -->
 	</div><!-- #content-pages -->
-
-<?php get_footer( 'pages' ); ?>
+	<?php if(!is_page('contato')):?>
+	    <?php get_template_part('parts/contato-home');?>
+	<?php endif;?>
+<?php get_footer(); ?>

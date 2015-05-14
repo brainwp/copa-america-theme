@@ -134,6 +134,8 @@ function mundialfutebolderua_scripts() {
 	wp_enqueue_style( 'twentyeleven-style', get_template_directory_uri() . '/twentyeleven-style.css' );
 	wp_enqueue_style( 'jquery.jscrollpane', get_template_directory_uri() . '/js/scroll/script/jquery.jscrollpane.css' );
 	wp_enqueue_script( 'jquery' );
+	//main.js
+	wp_enqueue_script( 'jquery.magnific-popup', get_stylesheet_directory_uri() . '/js/main.js', array('jquery'), '', true );
 	// Chamando o LigthBox Magnific!
 	wp_enqueue_script( 'jquery.magnific-popup', get_stylesheet_directory_uri() . '/js/jquery.magnific-popup.js', array('jquery'), '', true );
 	wp_enqueue_style( 'magnific-popup', get_stylesheet_directory_uri() . '/js/magnific-popup.css' );

@@ -9,17 +9,19 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
 	<header class="entry-header-page">
-		<div class="titulo-page"><h2><?php the_title(); ?></h2></div>
+		<div class="titulo-page"><h1><?php the_title(); ?></h1></div>
 	</header><!-- .entry-header-page -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
+		<div class="the-content">
+			<?php the_content(); ?>
+			<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'mundialfutebolderua' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'copa' ),
 				'after'  => '</div>',
 			) );
-		?>
+			?>
+		</div><!-- .the-content -->
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', '' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( __( 'Edit', 'copa' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->

@@ -3865,8 +3865,8 @@ margin: 0 !important;
 
 }
 /* =Contato Home */
-#contato-home{
-	padding:10px;
+#contato-home .contato-container{
+	padding:15px;
 }
 #contato-home .contato-left{
 	float:left;
@@ -3875,8 +3875,8 @@ margin: 0 !important;
 	font-weight: 400;
 	color:#2b2b2b;
 }
-.home-form input, 
-.home-form textarea, 
+.wpcf7 input, 
+.wpcf7 textarea, 
 #reveal-modal-id form input, 
 #reveal-modal-id form textarea{
 	padding:5px;
@@ -3885,7 +3885,7 @@ margin: 0 !important;
 	border-radius:3px;
 	border: transparent !important;
 }
-.home-form input[type="submit"], 
+.wpcf7 input[type="submit"], 
 .btn-send,
 #reveal-modal-id form input[type="submit"]{
 	background:#262f21;
@@ -3964,4 +3964,74 @@ margin: 0 !important;
 }
 .reveal-modal-bg{
 	z-index:9998 !important;
+}
+/* page.php */
+body.page-template-default{
+	background:#f0e778;
+}
+body.page #content-pages, 
+body.page #content-pages #content{
+	background:transparent !important;
+}
+#content .titulo-page{
+	width:100%;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#content header{
+	margin:0;
+	margin-bottom: 15px;
+}
+#content .titulo-page h1{
+	text-align: center;
+	font-family: 'Source Sans Pro',sans-serif;
+	font-weight: bold;
+	color:#262f21;
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+#content article{ 
+	width:100%;
+	padding:0;
+}
+#content .entry-content{
+	background:#fefac5;
+	width:100%;
+	max-width: 100%;
+	margin:0;
+	margin-top:-10px;
+}
+#content .entry-content .the-content{
+	padding:15px;
+	font-family: 'Source Sans Pro',sans-serif;
+	font-weight: 400;
+}
+#logo-mini{
+	width:10%;
+	background: url('images/logo-mini.png') center center no-repeat;
+	height:90px;
+	display: inline-block;
+	float:left;
+}
+header#masthead .area-3-header.is-mini-header{
+	margin-top:-10px;
+}
+header#masthead .area-3-header.is-mini-header nav{
+	margin: 28px 5px 0px -10px;
+}
+header#masthead .title-site.is-mini-header{
+	width:100%;
+	font-size: 2.1em;
+	display: block;
+	padding-top:15px;
+}
+.bg-header.is-mini-header{
+	min-height: 126px;
+}
+.bg-slider.is-mini-header{
+	top: 120px;
+	background-attachment: fixed;
+}
+.altura-header.is-mini-header{
+	height:70px;
 }
