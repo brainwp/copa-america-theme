@@ -4088,6 +4088,21 @@ header#masthead .title-site.is-mini-header{
 	display: inline-block;
 	font-size: 1.1em;
 }
+.modal-img-container{
+	float:left;
+	width:25%;
+}
+.modal-img-container{
+	display: block;
+	margin:0 auto;
+}
+.modal-content{
+	float:right;
+	width:75%;
+}
+#reveal-modal-id .sp-template-logo{
+	display:none;
+}
 @media (max-width: 760px) {
 	.times-container{
 		width:100%;
@@ -4098,5 +4113,9 @@ header#masthead .title-site.is-mini-header{
 	}
 	.times-container .img-container{
 		max-height:inherit !important;
+	}
+	.modal-content, .modal-img-container{
+		width:100%;
+		clear:both;
 	}
 }
