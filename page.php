@@ -10,7 +10,7 @@
  * @package mundialfutebolderua
  */
 
-get_header( 'interno' ); ?>
+get_header(); ?>
 
 <div class="altura-header is-mini-header"></div>
 	<div id="content-pages">

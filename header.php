@@ -28,7 +28,7 @@
 <body <?php body_class(); ?>>
 
 <?php $class = '';?>
-<?php if(!is_page('home') && is_page()): ?>
+<?php if(!is_page('home') && is_page() || is_archive()): ?>
 	<?php $class = 'is-mini-header';?>
 <?php endif;?>
 
@@ -45,12 +45,12 @@
 	<?php endif;?>
 
 	<?php $class = '';?>
-	<?php if(!is_page('home') && is_page()): ?>
+	<?php if(!is_page('home') && is_page() || is_archive()): ?>
 	    <a id="logo-mini" <?php echo esc_url( home_url( '/' ) ); ?>></a><!-- #logo-mini -->
     <?php endif;?>
 
     <?php $class = '';?>
-    <?php if(!is_page('home') && is_page()): ?>
+    <?php if(!is_page('home') && is_page() || is_archive()): ?>
         <?php $class = 'is-mini-header';?>
     <?php endif;?>
 

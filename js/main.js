@@ -1,10 +1,8 @@
 jQuery(function($){	
 $(document).ready(function() {
 
-  	if($('body').hasClass('page-template-default')){
+  	if($('body').hasClass('page-template-default') || $('body').hasClass('page-template-page-times')){
   		$('.bg-slider').css('height',$('.entry-header-page').outerHeight(true) + 'px');
-  		console.log('foi')
   	}
-  	console.log('nfoi');
 });	
 });
