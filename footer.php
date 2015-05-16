@@ -32,6 +32,11 @@
                     <a class="icon-mail" href="<?php echo esc_url(kirki_get_option( 'email' )); ?>"></a>
                 <?php endif;?>
 
+                <a href="http://www.brasa.art.br" class="dev">
+                    <span>Desenvolvido por</span>
+                    <span class="brasa"></span>
+                </a>
+
             </div><!-- #redes -->
         </div><!-- .footer -->
     </footer><!-- #footer -->
