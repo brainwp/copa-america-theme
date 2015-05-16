@@ -3,9 +3,7 @@
 ?>
 <div class="noticias-container">
 	<a class="all" href="<?php the_permalink();?>">
-		<div class="permalink">
-			<span>+</span>
-		</div>
+		<div class="permalink"></div>
 		<div class="img-container">
 			<?php if(has_post_thumbnail()):?>
 			    <?php the_post_thumbnail('medium');?>
@@ -22,6 +20,7 @@
 			</h2><!-- .mes -->
 		</div><!-- .data -->
 		<div class="noticias-content">
+			<div class="fade"></div>
 			<h1 class="post-title"><?php the_title();?></h1><!-- .post-title -->
 			<div class="desc"><?php the_excerpt();?></div><!-- .desc -->
 		</div><!-- .noticias-content -->

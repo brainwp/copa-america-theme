@@ -1,7 +1,7 @@
 <?php
 /* template part contato */
 ?>
-    <h2 class="section-title">
+    <h2 class="section-title contato">
         <?php _e('Entre em Contato','copa');?>
     </h2><!-- .section-title -->
     <section id="contato-home" class="sub-content about">
