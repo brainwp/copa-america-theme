@@ -4,9 +4,9 @@
  *
  * @package mundialfutebolderua
  */
-get_header( 'interno' ); ?>
+get_header(); ?>
 
-<div class="altura-header"></div>
+<div class="altura-header is-mini-header"></div>
 
 <div id="content-index" class="site-content" role="main">
 
@@ -70,4 +70,4 @@ get_header( 'interno' ); ?>
 
 </div><!-- #content -->
 
-<?php get_footer('pages'); ?>
+<?php get_footer(); ?>

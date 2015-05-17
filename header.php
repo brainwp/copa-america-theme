@@ -28,6 +28,7 @@
 <?php if (is_home() || is_page( 'home' ) || is_front_page() ) : ?>
 
 	<body <?php body_class(); ?>>
+		<div class="bg-slider <?php echo $class; ?>"></div>
 
 <?php else : ?>
 
@@ -36,12 +37,11 @@
 <?php endif; ?>
 
 <?php $class = '';?>
-<?php if(!is_page('home') && is_page() || is_archive()): ?>
-	<?php $class = 'is-mini-header';?>
+<?php if( !is_page('home') && is_page() || is_archive() || is_single() ): ?>
+	<?php $class = 'is-mini-header'; ?>
 <?php endif;?>
 
-<div class="bg-header <?php echo $class;?>"></div>
-<div class="bg-slider <?php echo $class;?>"></div>
+<div class="bg-header <?php echo $class; ?>"></div>
 
 <div id="page" class="hfeed site site-home">
 
@@ -52,15 +52,15 @@
         </div><!-- #logo -->
 	<?php endif;?>
 
-	<?php $class = '';?>
-	<?php if(!is_page('home') && is_page() || is_archive()): ?>
+	<?php $class = ''; ?>
+	<?php if( !is_page('home') && is_page() || is_archive() || is_single() ): ?>
 	    <a id="logo-mini" <?php echo esc_url( home_url( '/' ) ); ?>></a><!-- #logo-mini -->
     <?php endif;?>
 
-    <?php $class = '';?>
-    <?php if(!is_page('home') && is_page() || is_archive()): ?>
+    <?php $class = ''; ?>
+    <?php if( !is_page('home') && is_page() || is_archive() || is_single() ): ?>
         <?php $class = 'is-mini-header';?>
-    <?php endif;?>
+    <?php endif; ?>
 
     <h1 class="title-site <?php echo $class;?>">
         <?php bloginfo( 'name' ); ?>
@@ -74,7 +74,6 @@
     </div><!-- .area-3-header -->			
         
 	</header><!-- #masthead -->
-
 
 	<?php do_action( 'before' ); ?>
 
