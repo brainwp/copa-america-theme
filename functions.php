@@ -6,7 +6,7 @@
  */
 
 if ( ! isset( $content_width ) )
-	$content_width = 640; /* pixels */
+	$content_width = 980; /* pixels */
 
 if ( ! function_exists( 'mundialfutebolderua_setup' ) ) :
 

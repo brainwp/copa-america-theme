@@ -25,7 +25,15 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<?php if (is_home() || is_page( 'home' ) || is_front_page() ) : ?>
+
+	<body <?php body_class(); ?>>
+
+<?php else : ?>
+
+	<body <?php body_class( 'interna' ); ?>>
+
+<?php endif; ?>
 
 <?php $class = '';?>
 <?php if(!is_page('home') && is_page() || is_archive()): ?>

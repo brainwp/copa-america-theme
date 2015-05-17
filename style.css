@@ -1461,7 +1461,13 @@ nav select {
 	overflow: hidden;
 	width: 100%;
 	position: absolute;
+	top: 175px;
+}
+body.logged-in .bg-slider {
 	top: 207px;
+}
+body.logged-in.interna .bg-slider {
+	top: 158px;
 }
 #slider {
 	max-width: 1000px;
@@ -1585,7 +1591,7 @@ margin: 0 40px;
 #content.page-content {
     background: none repeat scroll 0 0 #FFFFFF;
     margin: 0;
-    padding: 2em 0 0 0;
+    padding: 31px 0 0 0;
     max-width: 1000px;
 }
 
@@ -4075,7 +4081,7 @@ body.page #content-pages #content{
 	float:left;
 }
 header#masthead .area-3-header.is-mini-header{
-	margin-top:-10px;
+	margin-top:-3px;
 }
 header#masthead .area-3-header.is-mini-header nav{
 	margin: 28px 5px 0px -10px;
@@ -4090,11 +4096,15 @@ header#masthead .title-site.is-mini-header{
 	min-height: 126px;
 }
 .bg-slider.is-mini-header{
-	top: 120px;
+	top: 125px;
+	background-attachment: fixed;
+}
+body.logged-in .bg-slider.is-mini-header{
+	top: 157px;
 	background-attachment: fixed;
 }
 .altura-header.is-mini-header{
-	height:70px;
+	height:105px;
 }
 /* archive team */
 .times-container{
