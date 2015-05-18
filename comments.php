@@ -47,7 +47,7 @@ if ( post_password_required() )
 				 * define artunlimited_comment() and that will be used instead.
 				 * See artunlimited_comment() in inc/template-tags.php for more.
 				 */
-				wp_list_comments( array( 'callback' => 'mundialfutebolderua_comment' ) );
+				wp_list_comments();
 			?>
 		</ol><!-- .comment-list -->
 
