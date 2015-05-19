@@ -166,9 +166,7 @@ a:active { /* Improves readability when focused and also mouse hovered in all br
 a img {
 	border: 0;
 }
-
 .smalll-size {
-
 }
 
 /* =Global
@@ -179,23 +177,19 @@ body {
 	font-size: 16px;
 	background-color: #FFFFFF;
 	line-height: 1.5;
-	margin: 0;
+	margin: 0 0 -20px 0;
 	padding: 0;
 	background: url("images/bg.jpg") repeat scroll center top #F8EE7C;
 }
 .fonte-roxa {
 	color: #C63F28;	
 }
-
 .fonte-laranja {
 	color: #C63F28;	
 }
-
-
 body.no-scroll {
     overflow: hidden;
 }
-
 .overlay {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
     display: none;
@@ -207,8 +201,6 @@ body.no-scroll {
     width: 100%;
 	z-index: 99999;
 }
-
-
 #home .top-wrapper {
 	margin-top: 0px;
 }
@@ -217,26 +209,20 @@ body.no-scroll {
 	clear: both;
 	width: 100%;
 }
-
 .comment-author img {
 	width:auto !important;
-
 }
-
 .comments-title {
     color: #CE6333;
     line-height: 2;
     padding: 0 0 0.6em;
     text-transform: uppercase;
 }
-
 ol.comment-list {
     list-style: none outside none;
     margin: 0 auto;
     width: auto;
 }
-
-
 .comment-list > li.comment {
     background: none repeat scroll 0 0 #F6F6F6;
     border: 1px solid #DDDDDD;
@@ -260,7 +246,6 @@ ol.comment-list {
     padding: 1.625em;
     position: relative;
 }
-
 .comment-meta .fn {
     font-style: normal;
 }
@@ -270,8 +255,6 @@ ol.comment-list {
     line-height: 2;
 	display: block;
 }
-
-
 .comment-list .children li.comment .comment-meta {
     line-height: 1.625em;
     margin-left: 50px;
@@ -290,15 +273,12 @@ ol.comment-list {
     font-size: 12px;
     line-height: 2;
 }
-
 .comment-author {
 	width: auto;
 	float: left;
 
 }
-
 .comment-author span.says {
-
 	margin-right: 5px;
 }
 .comment-list .avatar {
@@ -309,7 +289,6 @@ ol.comment-list {
     position: absolute;
     top: 2.6em;
 }
-
 .comment-list .children .avatar {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
     box-shadow: none;
@@ -355,42 +334,34 @@ a.comment-reply-link > span {
     margin-left: 102px;
     width: auto;
 }
-
-
 .center {
 	height: auto;
     margin: 0 auto;
     overflow: hidden;
     width: 100%;
 }
-
 .esquerda {
 	width: 44%;
 	margin: 3%;
 	float: left;
 }
-
 .direita {
 	width: 44%;
 	margin: 3%;
 	float: left;
 }
-
-
 .right-sub-content {
     height: auto;
     margin: 0 70px 0 280px;
     width: auto;
     overflow: hidden;
 }
-
 .left-sub-content {
     height: auto;
     margin: 20px 330px 0 30px;
     width: auto;
     overflow: hidden;
 }
-
 button,
 input,
 select,
@@ -436,77 +407,43 @@ hr {
 	margin-bottom: 1.5em;
 }
 /* Text elements */
-
 p {
-
 	margin-bottom: 1.25em;
 	margin-top: 0;
-
 }
-
 ul, ol {
-
 	margin: 0;
-
 }
-
 ul {
-
 	list-style: none;
-
 }
 
 ol {
-
 	list-style: decimal;
-
 }
-
 li > ul,
 li > ol {
-
 	margin-bottom: 0;
-
 	margin-left: 0;
-
 }
-
 dt {
-
 	font-weight: bold;
-
 }
-
 dd {
-
 	margin: 0 1.5em 1.5em;
-
 }
-
 b, strong {
-
 	font-weight: bold;
-
 }
-
 dfn, cite, em, i {
-
 	font-style: italic;
-
 }
-
 blockquote {
-
 	margin: 0 1.5em;
-
 }
-
 address {
-
 	margin: 0 0 1.5em;
-
 }
-
 pre {
     background: none repeat scroll 0 0 #EEEEEE;
     font-family: "Courier 10 Pitch",Courier,monospace;
@@ -518,7 +455,6 @@ pre {
     overflow: auto;
     padding: 1.6em;
 }
-
 code, kbd, tt, var {
 	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
