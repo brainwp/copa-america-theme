@@ -10,6 +10,9 @@
 	</div><!-- #page -->
     <footer id="footer">
         <div class="footer">
+            <div class="infos-rodape regua">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/regua-logos-copa.jpg" alt="Realização e Patrocínio">
+            </div><!-- .infos-rodape regua -->
             <div class="infos-rodape">
                 <div class="content-footer">
                     <?php if(kirki_get_option('endereco')) echo kirki_get_option('endereco');?>

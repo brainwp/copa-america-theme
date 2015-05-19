@@ -3085,6 +3085,17 @@ object {
     margin: 24px 0 0 10px;
     width: 65%;
 }
+.infos-rodape.regua {
+	margin-bottom: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+.infos-rodape.regua img {
+	border-radius: 5px;
+	max-width: 70%;
+	margin: 0 auto;
+}
 
 .footer-noticias {
     background: none repeat scroll 0 0 #E5E5E5;
