@@ -204,6 +204,9 @@ body.no-scroll {
 #home .top-wrapper {
 	margin-top: 0px;
 }
+#slider .slick-prev, #slider .slick-next {
+	top: 250px !important;
+}
 #comments {
 	margin: 0 auto;
 	clear: both;
